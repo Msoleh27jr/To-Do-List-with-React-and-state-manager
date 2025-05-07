@@ -103,7 +103,7 @@ const App = () => {
       {
         fakeData.map((e)=> {
           return (
-            <div key={e.id} className="flex flex-col justify-center items-center gap-2 border-1 w-[300px] rounded-2xl text-center h-[300px] shadow-2xl">
+            <div key={e.id} className="flex flex-col justify-center items-center gap-2 w-[300px] rounded-2xl text-center h-[300px] shadow-2xl">
               <h1 className="text-2xl font-bold">{e.name}</h1>
               <h1 className="text-[20px]">{e.age}</h1>
               <input type="checkbox" onClick={()=> funCheck(e.id)} checked={e.status} />
